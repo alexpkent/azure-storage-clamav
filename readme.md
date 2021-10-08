@@ -15,3 +15,7 @@ For large files the following Container Instance environment variables are requi
 
 For 2GB set the values to
 2000M
+
+1. Upload blobs into the scan container
+
+Blobs will be sent to clamav container, scanned and returned, if scan fails the blob will be replaced with an empty file stating it has been removed.
